@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+}
+
+.header{
+    background-color: #1F2937;
+    display: flex;
+}
+
+.navbar{
+    display: flex;
+}
+
+li{
+    color: white;
+}
+
+.logo img{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+}
