@@ -5,18 +5,44 @@ body{
 .header{
     background-color: #1F2937;
     display: flex;
+    justify-content: space-between;
+    padding: 1rem 10rem;
 }
 
-.navbar{
+
+.right-links{
     display: flex;
+    align-items: center;
 }
 
-li{
+ul{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+a{
     color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.logo{
+    display: flex;
+    gap: 3rem;
+    width: 8rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo img{
     width: 7rem;
     height: 7rem;
     border-radius: 50%;
+    display: flex;
+}
+
+.logo p{
+    color: white;
+    font-size: 26px;
 }
