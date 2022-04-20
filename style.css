@@ -93,3 +93,70 @@ a{
     padding: 10px;
     border-radius: 20%;
 }
+
+/* MIDDLE SECTION */
+
+.middle-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.container{
+    width: 10rem;
+    height: 10rem;
+    border: 2px solid blue;
+    border-radius: 10%;
+}
+
+.boring-info{
+    display: flex;
+    gap: 4rem;
+}
+
+.boring-info p{
+    color: black;
+}
+
+.quote{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    background-color: #c4fff7;
+    padding: 10rem;
+}
+
+.quote h2{
+    margin-left: auto;
+}
+
+.modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7rem auto;
+    background-color: blueviolet;
+    width: 50rem;
+    border-radius: 20%;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+}
+
+.footer h3{
+    color: white;
+    padding: 1rem;
+}
