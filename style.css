@@ -20,7 +20,7 @@ body{
 
 ul{
     display: flex;
-    gap: 15px;
+    gap: 4rem;
     align-items: center;
 }
 
@@ -45,8 +45,8 @@ a{
 }
 
 .logo p{
-    color: white;
-    font-size: 26px;
+    color: #F9FAF8;
+    font-size: 24px;
 }
 
 /* THE REMAINING CONTENT OF THE HEADER */
@@ -68,11 +68,15 @@ a{
     display: flex;
     flex-direction: column;
     width: 40rem;
+    font-size: 48px;
+    font-weight: bold;
+    color: #F9FAF8;
 }
 
 .overview h1, p{
     margin: 0;
-    color: white;
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
 .overview h1{
@@ -88,10 +92,11 @@ a{
 
 .user{
     width: 6rem;
-    background-color: rgb(24, 96, 145);
+    background-color: #3882F6;
     color: white;
     padding: 10px;
     border-radius: 10px;
+    font-size: 1rem;
 }
 
 /* MIDDLE SECTION */
@@ -103,26 +108,109 @@ a{
     justify-content: center;
 }
 
+.info{
+    font-size: 36px;
+    font-weight: bold;
+    color: #1F2937;
+}
+
 .cards{
     display: flex;
     justify-content: center;
     gap: 3rem;
 }
 
-.container{
-    width: 10rem;
-    height: 10rem;
-    border: 2px solid blue;
-    border-radius: 10%;
+.container-cluj{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    height: 20rem;
+    border: 4px solid #3882F6;
+    border-radius: 15px;
+    transition: 0.5s;
+    background-image: url(https://images.pexels.com/photos/4623898/pexels-photo-4623898.jpeg?cs=srgb&dl=pexels-mihai-vlasceanu-4623898.jpg&fm=jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container-sibiu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    height: 20rem;
+    border: 4px solid #3882F6;
+    border-radius: 15px;
+    transition: 0.5s;
+    background-image: url(https://images.unsplash.com/photo-1639488013074-dcd13020150b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80);
+    background-position: center;
+    background-size: cover;
+}
+
+.container-iasi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    height: 20rem;
+    border: 4px solid #3882F6;
+    border-radius: 15px;
+    transition: 0.5s;
+    background-image: url(https://images.unsplash.com/photo-1566324366980-d2dec557cb6a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+    background-position: center;
+    background-size: cover;
+}
+
+.container-buc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    height: 20rem;
+    border: 4px solid #3882F6;
+    border-radius: 15px;
+    transition: 0.5s;
+    background-image: url(https://images.unsplash.com/photo-1583916588652-b9477dcf9751?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80);
+    background-position: center;
+    background-size: cover;
+}
+
+.container-cluj p, .container-sibiu p, .container-iasi p, .container-buc p{
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+    color: red;
+
+}
+
+.container-cluj:hover, .container-sibiu:hover, .container-iasi:hover, .container-buc:hover{
+    box-shadow:0 0 0 10rem rgb(26, 25, 25) inset;
+}
+
+.container-cluj:hover p, .container-sibiu:hover p, .container-iasi:hover p, .container-buc:hover p{
+    opacity: 1;
+    color: red;
+    transform: scale(1);
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
 }
 
 .boring-info{
     display: flex;
-    gap: 4rem;
+    gap: 7.5rem;
+    margin-top: 2rem;
+    background-color: #1F2937;
+    padding: 20px;
+    border-radius: 30px;
 }
 
-.boring-info p{
-    color: black;
+.boring-info a{
+    color: white;
+}
+
+.boring-info a:hover{
+    color: #3882F6;
 }
 
 .quote{
@@ -131,9 +219,15 @@ a{
     justify-content: center;
     align-items: center;
     margin-top: 5rem;
-    background-color: #c4fff7;
+    background-color: #E5E7EB;
     padding: 10rem;
     width: 99rem;
+}
+
+.quote h1{
+    font-family: 'Philosopher', sans-serif;
+    font-style: italic;
+    font-size: 36px;
 }
 
 .quote h2{
@@ -145,7 +239,7 @@ a{
     justify-content: space-between;
     align-items: center;
     margin: 7rem auto;
-    background-color: blueviolet;
+    background-color: #3882F6;
     width: 70rem;
     border-radius: 10px;
     padding: 2.5rem;
@@ -153,6 +247,10 @@ a{
 
 .modal, .left{
     margin-left: 6rem;
+}
+
+.modal p{
+    font-size: 1.3rem;
 }
 
 .modal, .right-links{
